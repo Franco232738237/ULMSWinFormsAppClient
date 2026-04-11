@@ -227,23 +227,6 @@ Try:
 Build → Clean Solution
 Build → Rebuild Solution
 
-# How to Submit This Project (Student Instructions)
-
-Ensure the following are included:
-
-* Complete Visual Studio solution
-* All form files (.cs)
-* Designer files
-* Resources
-* README.md
-* GitHub repository link
-
-Do NOT submit screenshots of code.
-
-Submit:
-
-ZIP File + GitHub Link
-
 # Author
 
 Developed by
