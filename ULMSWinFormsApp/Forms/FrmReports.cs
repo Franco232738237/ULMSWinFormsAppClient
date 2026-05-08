@@ -22,7 +22,7 @@ namespace ULMSWinFormsApp.Forms
             string studentId = txtReportStudentId.Text;
 
             // Intentional poor performance simulation
-            Thread.Sleep(4000);
+            //Unnecessary delay to simulate slow processing
 
             StringBuilder report = new StringBuilder();
 
@@ -43,7 +43,8 @@ namespace ULMSWinFormsApp.Forms
                 report.AppendLine("Subject 1: 78");
                 report.AppendLine("Subject 2: 65");
                 report.AppendLine("Subject 3: 80");
-                report.AppendLine("Average: 169");
+                double average = (78 + 65 + 80) / 3.0;
+                report.AppendLine("Average: " + average);//Corrected code
             }
             else if (reportType == "Enrollment Report")
             {

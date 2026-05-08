@@ -19,13 +19,23 @@ namespace ULMSWinFormsApp.Forms
 
         private void btnSaveStudent_Click(object sender, EventArgs e)
         {
-            // Intentional weak validation for testing purposes
+            int age;
+
+            if (string.IsNullOrWhiteSpace(txtStudentId.Text) ||
+                string.IsNullOrWhiteSpace(txtFullName.Text) ||
+                string.IsNullOrWhiteSpace(txtEmail.Text) ||
+                !int.TryParse(txtAge.Text, out age))
+            {
+                MessageBox.Show("Please enter valid student details.");
+                return;
+            }
+            // CorrectedCode
             Student student = new Student
             {
                 StudentId = txtStudentId.Text,
                 FullName = txtFullName.Text,
                 Email = txtEmail.Text,
-                Age = int.Parse(txtAge.Text),
+                Age = age,
                 Programme = cmbProgramme.Text
             };
 
