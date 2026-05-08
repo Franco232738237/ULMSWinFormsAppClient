@@ -19,7 +19,7 @@ namespace ULMSWinFormsApp.Forms
         private void btnEnroll_Click(object sender, EventArgs e)
         {
             // Corrected code
-            Enrollment enrollment = new Enrollment();
+            
             if (string.IsNullOrWhiteSpace(txtEnrollStudentId.Text) ||
     string.IsNullOrWhiteSpace(txtEnrollStudentName.Text) ||
     cmbCourse.SelectedIndex == -1 ||
